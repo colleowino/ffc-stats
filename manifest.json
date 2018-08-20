@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+
+	"name": "fcc-stats",
+	"description": "This extension clicks through the curriculum page on free-code-camp to display user progress",
+	"version": "1.1",
+
+	"icons": { "16": "fcc.png" },
+	"content_scripts": [
+		{
+			"matches": ["https://learn.freecodecamp.org/"],
+			"js": ["fcc-stats.js"]
+		}
+	]
+}
